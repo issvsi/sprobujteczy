@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Host</title>
+
+    <!-- Discord/OpenGraph embeds -->
+    <meta property="og:type" content="video.other">
+    <meta property="og:title" content="Hosted Video">
+    <meta property="og:description" content="Private video hosting page">
+    <meta property="og:video" content="https://YOUR_USERNAME.github.io/YOUR_REPO/videos/video.mp4">
+    <meta property="og:video:type" content="video/mp4">
+    <meta property="og:video:width" content="1280">
+    <meta property="og:video:height" content="720">
+
+    <style>
+        body {
+            margin: 0;
+            background: #111;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        video {
+            width: 80%;
+            max-width: 1000px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            background: black;
+        }
+
+        .link {
+            margin-top: 20px;
+            opacity: 0.7;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hosted Video</h1>
+
+    <video controls autoplay>
+        <source src="videos/video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <div class="link">
+        Direct link:<br>
+        https://YOUR_USERNAME.github.io/YOUR_REPO/videos/video.mp4
+    </div>
+
+</body>
+</html>
